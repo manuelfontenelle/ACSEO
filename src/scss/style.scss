@@ -93,16 +93,16 @@ nav {
 			display: none;
 		}
 	}
-}
-.btn-custom {
-	font-weight: 700;
-	border-radius: 25px;
-	background-color: #ff6d74;
-	color: #ffffff;
-	padding-left: 1.2em;
-	padding-right: 1.2em;
-	&:hover {
-		border: 1px solid #000000;
+	.btn-custom {
+		font-weight: 700;
+		border-radius: 25px;
+		background-color: #ff6d74;
+		color: #ffffff;
+		padding-left: 1.2em;
+		padding-right: 1.2em;
+		&:hover {
+			border: 1px solid #000000;
+		}
 	}
 }
 
@@ -194,7 +194,10 @@ nav {
 		.blockImage {
 			position: relative;
 			margin: 5em 0;
-			padding-left: 3em;
+
+			@media (min-width: 992px) {
+				padding-left: 3em;
+			}
 			&__img {
 				position: relative;
 				&::before {
