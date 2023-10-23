@@ -320,3 +320,139 @@ p {
 		}
 	}
 }
+
+#carousel {
+	width: 100%;
+	padding: 100px 0;
+	position: relative;
+	.slider-item {
+		width: 33%;
+		height: auto;
+		position: relative;
+
+		.text-container {
+			bottom: 8%;
+			left: 8%;
+			position: absolute;
+			img {
+				height: 30px;
+				width: auto;
+				margin-bottom: 10px;
+			}
+			h3 {
+				color: white;
+				font-weight: 700;
+				font-size: 35px;
+			}
+			h4 {
+				color: white;
+				font-weight: 200;
+				font-size: 20px;
+			}
+		}
+		.arrow-container {
+			width: 70px;
+			height: 70px;
+			bottom: 8%;
+			right: 8%;
+			position: absolute;
+			border: 1px solid white;
+			border-radius: 100%;
+			padding: 25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			transition: all ease 0.2s;
+			&:hover {
+				border: 3px solid white;
+				padding: 20px;
+			}
+			.arrow {
+			}
+		}
+	}
+	img {
+		width: 98%;
+		line-height: 350px;
+		object-fit: cover;
+	}
+	// h3 {
+	// 	background: #fff;
+	// 	color: black;
+	// 	font-size: 36px;
+	// 	line-height: 350px;
+	// 	margin: 10px;
+	// 	padding: 2%;
+	// 	position: relative;
+	// 	text-align: center;
+	// }
+	.slider {
+		width: 100%;
+		// max-width: 1200px;
+		margin: 0 auto;
+		background: white;
+	}
+
+	.slick-list {
+		padding-left: 0px !important; // half partial
+	}
+
+	button {
+		z-index: 10;
+		margin-right: 4%;
+		margin-top: -50px;
+		// position: absolute;
+		// right: 100px;
+		// top: 0;
+	}
+	.slick-prev {
+		background-color: blue;
+		border-radius: 100%;
+		position: absolute;
+		right: 80px;
+		top: 0;
+		left: inherit;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:before {
+			// position: absolute;
+			background-image: url("../assets/flèche.svg");
+			transform: rotate(180deg);
+			background-size: 20px 20px;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			content: "";
+			color: red;
+			font-size: 30px;
+		}
+	}
+
+	.slick-next {
+		border-radius: 100%;
+		background-color: red;
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		right: 0;
+		top: 0;
+		&:before {
+			position: absolute;
+			background-image: url("../assets/flèche.svg");
+			background-size: 20px 20px;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			content: "";
+			color: red;
+			font-size: 30px;
+		}
+	}
+}
