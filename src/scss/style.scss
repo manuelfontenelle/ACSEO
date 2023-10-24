@@ -323,8 +323,50 @@ p {
 
 #carousel {
 	width: 100%;
-	padding: 100px 0;
+	padding: 50px 0;
 	position: relative;
+	a {
+		color: $red;
+		font-weight: 700;
+		text-align: center;
+		display: block;
+		font-size: 20px;
+		margin-top: 1em;
+	}
+	.titleBlock {
+		// display: flex;
+		// justify-content: center;
+		font-weight: 700;
+		font-size: 36px;
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
+		.firstLine {
+			display: block;
+			font-size: 28px;
+		}
+		.secondLine {
+			position: relative;
+			&::after {
+				content: "";
+				width: 100%;
+				height: 20px;
+				background: #a7d8db;
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				top: 25px;
+				z-index: -1;
+			}
+			// text-decoration: none;
+			// background-image: linear-gradient($lightBlue, $lightBlue);
+			// background-repeat: no-repeat;
+			// background-position: bottom left;
+			// background-size: 110% 40%;
+			// padding-right: 5px;
+		}
+	}
 	.slider-item {
 		width: 33%;
 		height: auto;
@@ -455,5 +497,59 @@ p {
 			color: red;
 			font-size: 30px;
 		}
+	}
+}
+
+#blockProjet {
+	// font-family: "Raleway", sans-serif;
+	background-color: $grey;
+	padding: 50px 0;
+	width: 100%;
+	.titleBlock {
+		// display: flex;
+		// justify-content: center;
+		font-weight: 700;
+		font-size: 36px;
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
+		.firstLine {
+			// display: block;
+			// font-size: 28px;
+			position: relative;
+			z-index: 1;
+			&::after {
+				content: "";
+				width: 85%;
+				height: 20px;
+				background: #a7d8db;
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				top: 25px;
+				z-index: -1;
+			}
+		}
+		.secondLine {
+			display: block;
+			// text-decoration: none;
+			// background-image: linear-gradient($lightBlue, $lightBlue);
+			// background-repeat: no-repeat;
+			// background-position: bottom left;
+			// background-size: 110% 40%;
+			// padding-right: 5px;
+		}
+	}
+	button {
+		font-weight: 700;
+		border-radius: 25px;
+		background-color: #ff6d74;
+		color: #ffffff;
+		text-align: center;
+		padding-left: 1.2em;
+		padding-right: 1.2em;
+		margin: 0 auto;
+		display: block;
 	}
 }
