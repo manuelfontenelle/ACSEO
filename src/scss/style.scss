@@ -1,37 +1,5 @@
 @import "colors";
 
-$grid-breakpoints: (
-	xs: 0,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
-	xxl: 1400px,
-);
-
-// X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-}
-
 body {
 	font-family: "Raleway", sans-serif;
 	font-size: 15px;
@@ -169,7 +137,6 @@ p {
 			min-height: 500px;
 		}
 		&__left {
-			// padding-right: 10%;
 			.titleBlock {
 				font-weight: 700;
 				font-size: 36px;
@@ -313,7 +280,6 @@ p {
 	background-color: $grey;
 	width: 100%;
 	&.blockImageLeft {
-		// padding: 50px 0;
 		img {
 			width: 100%;
 			@media (min-width: 992px) {
@@ -336,8 +302,6 @@ p {
 		margin-top: 2em;
 	}
 	.titleBlock {
-		// display: flex;
-		// justify-content: center;
 		font-weight: 700;
 		font-size: 36px;
 		display: block;
@@ -361,12 +325,6 @@ p {
 				top: 25px;
 				z-index: -1;
 			}
-			// text-decoration: none;
-			// background-image: linear-gradient($lightBlue, $lightBlue);
-			// background-repeat: no-repeat;
-			// background-position: bottom left;
-			// background-size: 110% 40%;
-			// padding-right: 5px;
 		}
 	}
 	.slider-item {
@@ -412,8 +370,6 @@ p {
 				opacity: 0.8;
 			}
 			&:hover {
-				// border: 1px solid white;
-				// padding: 20px;
 				img {
 					opacity: 1;
 				}
@@ -427,38 +383,23 @@ p {
 		line-height: 350px;
 		object-fit: cover;
 	}
-	// h3 {
-	// 	background: #fff;
-	// 	color: black;
-	// 	font-size: 36px;
-	// 	line-height: 350px;
-	// 	margin: 10px;
-	// 	padding: 2%;
-	// 	position: relative;
-	// 	text-align: center;
-	// }
 	.slider {
 		width: 100%;
-		// max-width: 1200px;
 		margin: 0 auto;
 		background: white;
 	}
 
 	.slick-list {
-		padding-left: 0px !important; // half partial
+		padding-left: 0px !important;
 	}
 
 	button {
 		z-index: 10;
 		margin-right: 4%;
 		margin-top: -50px;
-		// position: absolute;
-		// right: 100px;
-		// top: 0;
 	}
 	.slick-prev {
 		border: 2px solid $grey;
-		// background-color: blue;
 		border-radius: 100%;
 		position: absolute;
 		right: 80px;
@@ -470,9 +411,7 @@ p {
 		align-items: center;
 		justify-content: center;
 		&:before {
-			// position: absolute;
 			background-image: url("../assets/flèche-grise.svg");
-			// transform: rotate(180deg);
 			background-size: 20px 20px;
 			display: inline-block;
 			width: 20px;
@@ -509,21 +448,16 @@ p {
 }
 
 #blockProjet {
-	// font-family: "Raleway", sans-serif;
 	background-color: $grey;
 	padding: 50px 0;
 	width: 100%;
 	.titleBlock {
-		// display: flex;
-		// justify-content: center;
 		font-weight: 700;
 		font-size: 36px;
 		display: block;
 		margin-bottom: 1em;
 		text-align: center;
 		.firstLine {
-			// display: block;
-			// font-size: 28px;
 			position: relative;
 			z-index: 1;
 			&::after {
@@ -541,12 +475,6 @@ p {
 		}
 		.secondLine {
 			display: block;
-			// text-decoration: none;
-			// background-image: linear-gradient($lightBlue, $lightBlue);
-			// background-repeat: no-repeat;
-			// background-position: bottom left;
-			// background-size: 110% 40%;
-			// padding-right: 5px;
 		}
 	}
 	button {
@@ -564,5 +492,25 @@ p {
 			background-color: $grey;
 			color: black;
 		}
+	}
+}
+#footerContainer {
+	background-color: $darkBlue;
+	width: 100%;
+}
+#footer {
+	font-family: "Raleway", sans-serif;
+
+	h5 {
+		font-weight: 700;
+		color: white;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	.sep {
+		border-left: 2px solid $lightBlue;
+		padding-left: 3em;
 	}
 }
