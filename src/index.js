@@ -5,14 +5,32 @@ window.onload = function () {
 
 	var $carousel = $(".slider")
 
-	var settings = {
+	$(".slider").slick({
 		dots: false,
 		arrows: true,
 		slide: ".slick-slideshow__slide",
 		slidesToShow: 2,
+		speed: 300,
+		infinite: true,
 		centerMode: true,
+		autoplaySpeed: 2000,
+		autoplay: true,
 		centerPadding: "250px",
-	}
+
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					speed: 300,
+					infinite: true,
+					arrows: false,
+					centerMode: true,
+					centerPadding: "40px",
+					slidesToShow: 1,
+				},
+			},
+		],
+	})
 
 	function setSlideVisibility() {
 		//Find the visible slides i.e. where aria-hidden="false"

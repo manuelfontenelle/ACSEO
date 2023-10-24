@@ -407,7 +407,8 @@ p {
 		// top: 0;
 	}
 	.slick-prev {
-		background-color: blue;
+		border: 2px solid $grey;
+		// background-color: blue;
 		border-radius: 100%;
 		position: absolute;
 		right: 80px;
@@ -420,8 +421,8 @@ p {
 		justify-content: center;
 		&:before {
 			// position: absolute;
-			background-image: url("../assets/flèche.svg");
-			transform: rotate(180deg);
+			background-image: url("../assets/flèche-grise.svg");
+			// transform: rotate(180deg);
 			background-size: 20px 20px;
 			display: inline-block;
 			width: 20px;
@@ -434,7 +435,7 @@ p {
 
 	.slick-next {
 		border-radius: 100%;
-		background-color: red;
+		border: 2px solid $red;
 		position: absolute;
 		width: 60px;
 		height: 60px;
@@ -445,7 +446,7 @@ p {
 		top: 0;
 		&:before {
 			position: absolute;
-			background-image: url("../assets/flèche.svg");
+			background-image: url("../assets/flèche-rouge.svg");
 			background-size: 20px 20px;
 			display: inline-block;
 			width: 20px;
