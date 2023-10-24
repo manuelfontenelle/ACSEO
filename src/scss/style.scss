@@ -101,6 +101,8 @@ p {
 		padding-right: 1.2em;
 		&:hover {
 			border: 1px solid #000000;
+			background-color: $grey;
+			color: black;
 		}
 	}
 }
@@ -331,7 +333,7 @@ p {
 		text-align: center;
 		display: block;
 		font-size: 20px;
-		margin-top: 1em;
+		margin-top: 2em;
 	}
 	.titleBlock {
 		// display: flex;
@@ -393,22 +395,28 @@ p {
 			}
 		}
 		.arrow-container {
-			width: 70px;
-			height: 70px;
+			width: 60px;
+			height: 60px;
 			bottom: 8%;
 			right: 8%;
 			position: absolute;
-			border: 1px solid white;
+			border: 2px solid white;
 			border-radius: 100%;
-			padding: 25px;
+			padding: 18px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
 			transition: all ease 0.2s;
+			img {
+				opacity: 0.8;
+			}
 			&:hover {
-				border: 3px solid white;
-				padding: 20px;
+				// border: 1px solid white;
+				// padding: 20px;
+				img {
+					opacity: 1;
+				}
 			}
 			.arrow {
 			}
@@ -551,5 +559,10 @@ p {
 		padding-right: 1.2em;
 		margin: 0 auto;
 		display: block;
+		&:hover {
+			border: 1px solid #000000;
+			background-color: $grey;
+			color: black;
+		}
 	}
 }
