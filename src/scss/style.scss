@@ -510,7 +510,40 @@ p {
 		color: white;
 	}
 	.sep {
-		border-left: 2px solid $lightBlue;
-		padding-left: 3em;
+		@media (min-width: 992px) {
+			border-left: 2px solid $lightBlue;
+			padding-left: 3em;
+		}
+	}
+
+	.blockLogo {
+		display: block;
+		margin-top: 1.5em;
+		h5 {
+			font-size: 16px;
+			margin: 0;
+		}
+		.textSousLogo {
+			font-size: 14px;
+			color: white;
+		}
+		.blockRs {
+			display: flex;
+			gap: 10px;
+			img {
+				width: 25px;
+			}
+		}
+	}
+}
+
+#footerLast {
+	width: 100%;
+
+	p,
+	ul {
+		font-size: 16px;
+		font-family: "Raleway", sans-serif;
+		font-weight: 700;
 	}
 }
