@@ -497,6 +497,7 @@ p {
 #footerContainer {
 	background-color: $darkBlue;
 	width: 100%;
+	padding: 50px 0;
 }
 #footer {
 	font-family: "Raleway", sans-serif;
@@ -545,5 +546,6 @@ p {
 		font-size: 16px;
 		font-family: "Raleway", sans-serif;
 		font-weight: 700;
+		margin: 0;
 	}
 }
